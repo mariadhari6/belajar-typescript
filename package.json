@@ -1,0 +1,21 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "ts": "tsc --watch"
+  },
+  "keywords": [
+    "learn",
+    "typescript",
+    "belajar",
+    "typescript"
+  ],
+  "author": "mar'i adhari",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
