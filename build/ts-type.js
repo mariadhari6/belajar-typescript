@@ -1,3 +1,6 @@
+/* eslint-disable prefer-const */
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Type undefinied
 let undefiniedType;
 // Type boolean
@@ -15,7 +18,7 @@ let typeNull;
 let person = {
     name: "Mar'i Adhari",
     age: 21,
-    collage: "Polindra Jaya"
+    collage: "Polindra Jaya",
 };
 console.log(person);
 // Type function
@@ -73,3 +76,5 @@ function printName(name) {
     console.log(name);
 }
 printName("Mar'i Adhari");
+let i;
+i = {};

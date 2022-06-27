@@ -1,24 +1,34 @@
 //  Array of Number
-let score: number[] = [100, 90, 80];
+const score: number[] = [100, 90, 80];
+console.log(score);
+
 
 // Array of String
-let names: string[] = ["Rimuru", "Diablo", "Guy Crimson"];
+const names: string[] = ["Rimuru", "Diablo", "Guy Crimson"];
+console.log(names);
 
 // Array of Union
 let unionsAge: number[] | string[] = ["20", "21"];
+console.log(unionsAge);
 unionsAge = [21, 20];
+console.log(unionsAge);
 
 // Tuple
-let tuple: [number, string, boolean] = [10, "Hello", false];
+const tuple: [number, string, boolean] = [10, "Hello", false];
+console.log(tuple);
 
 // Array destructuring
-let [a, b, c] = tuple; //<= a:10, b:"Hello", c:false
-let [d, ...other] = tuple // <= d:10, other:["Hello", false]
-let [, , f] = tuple; // <= f:false
+const [a, b, c] = tuple; //<= a:10, b:"Hello", c:false
+console.log([a, b, c]);
+
+const [d, ...other] = tuple; // <= d:10, other:["Hello", false]
+console.log(d);
 console.log(other);
+const [, , f] = tuple; // <= f:false
+console.log(f);
 
 // Array of Objects
-let persons: [object, object, object] = [
+const persons: [object, object, object] = [
     {
         name: "Mar'i Adhari",
         age: 21
@@ -31,7 +41,11 @@ let persons: [object, object, object] = [
         gender: "Female",
         isCute: true
     }
-]
+];
+persons.forEach(person => {
+    console.log(person);
+});
 
 // Array multidimensional
-let multiDimensional: number[][] = [[1, 2, 3], [4, 5, 6, 7]];
+const multiDimensional: number[][] = [[1, 2, 3], [4, 5, 6, 7]];
+console.log(multiDimensional);
